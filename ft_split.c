@@ -68,7 +68,10 @@ void	set_width_size(char const *s, char c, char **str)
 			}
 			str[height] = (char *)malloc(sizeof(char) * (width + 1));
 			if (str[height] == NULL)
+			{
 				free_str(str, height);
+				return ;
+			}
 			height++;
 		}
 	}
