@@ -6,13 +6,13 @@
 /*   By: jna <jna@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/16 16:13:48 by jna               #+#    #+#             */
-/*   Updated: 2020/11/21 05:37:55 by jna              ###   ########.fr       */
+/*   Updated: 2021/07/25 23:47:26 by jna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_memcmp(const void *s1, const void *s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	unsigned int	count;
 	unsigned char	*ptr1;

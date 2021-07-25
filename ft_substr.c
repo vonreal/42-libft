@@ -6,7 +6,7 @@
 /*   By: jna <jna@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/23 16:57:41 by jna               #+#    #+#             */
-/*   Updated: 2020/11/25 20:41:10 by jna              ###   ########.fr       */
+/*   Updated: 2021/07/25 23:50:14 by jna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 		return (0);
 	if (ft_strlen(s) < start)
 		return (ft_strdup(""));
-	if (!(substr = (char *)malloc(sizeof(char) * (len + 1))))
+	substr = (char *)malloc(sizeof(char) * (len + 1));
+	if (substr == NULL)
 		return (0);
 	ft_strlcpy(substr, s + start, len + 1);
 	return (substr);

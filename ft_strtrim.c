@@ -6,15 +6,15 @@
 /*   By: jna <jna@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/25 19:44:27 by jna               #+#    #+#             */
-/*   Updated: 2020/11/25 20:32:57 by jna              ###   ########.fr       */
+/*   Updated: 2021/07/25 23:50:58 by jna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		check_set(char c, char const *set)
+static int	check_set(char c, char const *set)
 {
-	int		idx;
+	int	idx;
 
 	idx = 0;
 	while (set[idx])
@@ -26,9 +26,9 @@ int		check_set(char c, char const *set)
 	return (0);
 }
 
-int		check_front(char const *s1, char const *set)
+static int	check_front(char const *s1, char const *set)
 {
-	int		front;
+	int	front;
 
 	front = 0;
 	while (s1[front])
@@ -40,10 +40,10 @@ int		check_front(char const *s1, char const *set)
 	return (front);
 }
 
-int		check_back(char const *s1, char const *set)
+static int	check_back(char const *s1, char const *set)
 {
-	int		size;
-	int		back;
+	int	size;
+	int	back;
 
 	size = ft_strlen(s1);
 	back = 1;
@@ -68,7 +68,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 	size = check_back(s1, set) - check_front(s1, set);
 	if (size >= 0)
 	{
-		if (!(strtrim = (char *)malloc(sizeof(char) * (size + 1))))
+		strtrim = (char *)malloc(sizeof(char) * (size + 1));
+		if (strtrim == NULL)
 			return (0);
 		ft_strlcpy(strtrim, s1 + check_front(s1, set), size + 1);
 		return (strtrim);

@@ -6,11 +6,11 @@
 /*   By: jna <jna@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/10 20:04:53 by jna               #+#    #+#             */
-/*   Updated: 2020/11/10 20:38:44 by jna              ###   ########.fr       */
+/*   Updated: 2021/07/25 14:10:59 by jna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
+#include "libft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {

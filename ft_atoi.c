@@ -6,28 +6,28 @@
 /*   By: jna <jna@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/08/16 15:34:58 by jna               #+#    #+#             */
-/*   Updated: 2020/11/28 17:24:07 by jna              ###   ########.fr       */
+/*   Updated: 2021/07/25 23:51:59 by jna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		check_str(char str)
+static int	check_str(char str)
 {
-	if (str == '\t' || str == '\n'
-					|| str == '\v'
-					|| str == '\f'
-					|| str == '\r'
+	if (str == '\t' || str == '\n' \
+					|| str == '\v' \
+					|| str == '\f' \
+					|| str == '\r' \
 					|| str == ' ')
 		return (0);
 	return (1);
 }
 
-int		ft_atoi(char *str)
+int	ft_atoi(char *str)
 {
-	int count;
-	int sign;
-	int num;
+	int		count;
+	int		sign;
+	int		num;
 
 	count = 0;
 	sign = 1;

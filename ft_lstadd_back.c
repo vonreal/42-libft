@@ -6,11 +6,10 @@
 /*   By: jna <jna@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/09 21:12:19 by jna               #+#    #+#             */
-/*   Updated: 2020/11/09 21:30:58 by jna              ###   ########.fr       */
+/*   Updated: 2021/07/25 14:08:50 by jna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
 void	ft_lstadd_back(t_list **lst, t_list *new)

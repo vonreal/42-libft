@@ -6,13 +6,13 @@
 /*   By: jna <jna@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/13 19:05:04 by jna               #+#    #+#             */
-/*   Updated: 2020/11/14 18:21:55 by jna              ###   ########.fr       */
+/*   Updated: 2021/07/25 23:52:21 by jna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		get_size(int n)
+static int	get_size(int n)
 {
 	int		count;
 

@@ -6,13 +6,13 @@
 /*   By: jna <jna@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/18 21:16:01 by jna               #+#    #+#             */
-/*   Updated: 2020/10/18 21:19:48 by jna              ###   ########.fr       */
+/*   Updated: 2021/07/25 14:06:46 by jna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isalnum(int c)
+int	ft_isalnum(int c)
 {
 	if (ft_isalpha(c) == 0)
 		return (ft_isdigit(c));

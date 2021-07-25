@@ -6,7 +6,7 @@
 /*   By: jna <jna@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/10 20:21:36 by jna               #+#    #+#             */
-/*   Updated: 2020/11/11 20:38:41 by jna              ###   ########.fr       */
+/*   Updated: 2021/07/25 23:53:02 by jna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {
-	t_list *new;
-	t_list *node;
+	t_list	*new;
+	t_list	*node;
 
 	if (lst == NULL)
 	{

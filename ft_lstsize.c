@@ -6,14 +6,13 @@
 /*   By: jna <jna@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/09 20:46:51 by jna               #+#    #+#             */
-/*   Updated: 2020/11/09 21:25:38 by jna              ###   ########.fr       */
+/*   Updated: 2021/07/25 23:49:14 by jna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
 #include "libft.h"
 
-int		ft_lstsize(t_list *lst)
+int	ft_lstsize(t_list *lst)
 {
 	int	len;
 

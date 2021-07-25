@@ -6,7 +6,7 @@
 /*   By: jna <jna@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/14 17:57:21 by jna               #+#    #+#             */
-/*   Updated: 2020/11/21 05:07:26 by jna              ###   ########.fr       */
+/*   Updated: 2021/07/26 00:00:20 by jna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@ int				ft_memcmp(const void *s1, const void *s2, size_t n);
 size_t			ft_strlen(const char *s);
 size_t			ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t			ft_strlcat(char *dst, const char *src, size_t dstsize);
-char			*ft_strchr(const char *s, int c);
-char			*ft_strrchr(const char *s, int c);
+char			*ft_strchr(char *s, int c);
+char			*ft_strrchr(char *s, int c);
 char			*ft_strnstr(char *haystack, char *needle, size_t len);
 int				ft_strncmp(const char *s1, const char *s2, size_t n);
 int				ft_atoi(char *str);
@@ -54,7 +54,7 @@ char			**ft_split(const char *s, char c);
 char			*ft_itoa(int n);
 char			*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 
-typedef struct	s_list
+typedef struct s_list
 {
 	void			*content;
 	struct s_list	*next;

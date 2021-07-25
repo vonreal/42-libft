@@ -6,13 +6,13 @@
 /*   By: jna <jna@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/18 21:34:10 by jna               #+#    #+#             */
-/*   Updated: 2020/10/18 21:38:13 by jna              ###   ########.fr       */
+/*   Updated: 2021/07/25 14:17:53 by jna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_toupper(int c)
+int	ft_toupper(int c)
 {
 	if (ft_isalpha(c) == 2)
 		c -= 32;

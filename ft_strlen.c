@@ -6,13 +6,13 @@
 /*   By: jna <jna@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/16 16:24:20 by jna               #+#    #+#             */
-/*   Updated: 2020/10/16 16:25:45 by jna              ###   ########.fr       */
+/*   Updated: 2021/07/25 14:15:02 by jna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <sys/types.h>
+#include "libft.h"
 
-size_t		ft_strlen(const char *s)
+size_t	ft_strlen(const char *s)
 {
 	unsigned int	count;
 

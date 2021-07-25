@@ -6,11 +6,11 @@
 /*   By: jna <jna@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/18 14:43:45 by jna               #+#    #+#             */
-/*   Updated: 2020/10/28 00:40:06 by jna              ###   ########.fr       */
+/*   Updated: 2021/07/25 14:16:16 by jna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <sys/types.h>
+#include "libft.h"
 
 static int	check_str(char *dst, char *src, size_t idx, size_t len)
 {
@@ -29,7 +29,7 @@ static int	check_str(char *dst, char *src, size_t idx, size_t len)
 	return (0);
 }
 
-char		*ft_strnstr(char *haystack, char *needle, size_t len)
+char	*ft_strnstr(char *haystack, char *needle, size_t len)
 {
 	unsigned int	count;
 

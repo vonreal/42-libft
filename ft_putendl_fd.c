@@ -6,11 +6,10 @@
 /*   By: jna <jna@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/23 17:55:00 by jna               #+#    #+#             */
-/*   Updated: 2020/10/23 18:04:38 by jna              ###   ########.fr       */
+/*   Updated: 2021/07/25 14:11:11 by jna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <unistd.h>
 #include "libft.h"
 
 void	ft_putendl_fd(char *s, int fd)

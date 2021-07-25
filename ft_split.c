@@ -6,16 +6,16 @@
 /*   By: jna <jna@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/11/14 19:32:09 by jna               #+#    #+#             */
-/*   Updated: 2020/11/28 21:34:44 by jna              ###   ########.fr       */
+/*   Updated: 2021/07/25 23:49:53 by jna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		get_height_size(char const *s, char c)
+static int	get_height_size(char const *s, char c)
 {
-	int		idx;
-	int		height;
+	int	idx;
+	int	height;
 
 	idx = 0;
 	height = 0;
@@ -33,9 +33,9 @@ int		get_height_size(char const *s, char c)
 	return (height);
 }
 
-void	free_str(char **str, int count)
+static void	free_str(char **str, int count)
 {
-	int		idx;
+	int	idx;
 
 	idx = 0;
 	while (idx <= count)
@@ -46,11 +46,11 @@ void	free_str(char **str, int count)
 	free(str);
 }
 
-void	set_width_size(char const *s, char c, char **str)
+static void	set_width_size(char const *s, char c, char **str)
 {
-	int		idx;
-	int		height;
-	int		width;
+	int	idx;
+	int	height;
+	int	width;
 
 	idx = 0;
 	height = 0;
@@ -68,20 +68,17 @@ void	set_width_size(char const *s, char c, char **str)
 			}
 			str[height] = (char *)malloc(sizeof(char) * (width + 1));
 			if (str[height] == NULL)
-			{
 				free_str(str, height);
-				return ;
-			}
 			height++;
 		}
 	}
 }
 
-void	set_str(char const *s, char c, char **str)
+static void	set_str(char const *s, char c, char **str)
 {
-	int		idx;
-	int		height;
-	int		width;
+	int	idx;
+	int	height;
+	int	width;
 
 	idx = 0;
 	height = 0;
@@ -113,7 +110,8 @@ char	**ft_split(char const *s, char c)
 	if (s == NULL)
 		return (NULL);
 	height = get_height_size(s, c);
-	if (!(str = (char **)malloc(sizeof(char *) * (height + 1))))
+	str = (char **)malloc(sizeof(char *) * (height + 1));
+	if (str == NULL)
 		return (NULL);
 	set_width_size(s, c, str);
 	set_str(s, c, str);

@@ -6,7 +6,7 @@
 /*   By: jna <jna@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/14 18:50:38 by jna               #+#    #+#             */
-/*   Updated: 2020/11/21 03:35:46 by jna              ###   ########.fr       */
+/*   Updated: 2021/07/25 14:06:20 by jna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,9 @@ void	ft_bzero(void *s, size_t n)
 
 	ptr = (unsigned char *)s;
 	count = 0;
-	while (count < n - 1)
+	while (count < n)
 	{
 		ptr[count] = 0;
 		count++;
 	}
-	ptr[count] = '\0';
 }

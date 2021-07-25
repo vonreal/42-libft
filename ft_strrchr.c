@@ -6,15 +6,17 @@
 /*   By: jna <jna@student.42seoul.kr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/18 14:35:24 by jna               #+#    #+#             */
-/*   Updated: 2020/10/18 14:43:29 by jna              ###   ########.fr       */
+/*   Updated: 2021/07/25 14:16:41 by jna              ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strrchr(char *s, int c)
 {
 	int	count;
 	int	last;
-	int first;
+	int	first;
 
 	count = 0;
 	last = 0;
