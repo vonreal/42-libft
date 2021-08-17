@@ -40,7 +40,7 @@ int	ft_atoi(char *str)
 			sign = -1;
 		count++;
 	}
-	while (str[count] >= '0' && str[count] <= '9')
+	while ('0' <= str[count] && str[count] <= '9')
 		num = (num * 10) + str[count++] - '0';
 	return ((int)(num * sign));
 }
